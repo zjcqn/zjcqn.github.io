@@ -157,8 +157,8 @@ header_pages:
 # Page default value
 defaults:
   home:
-    heading: "潜犊的Blog"
-    subheading: "读万卷书，行万里路"
+    heading: "读万卷书，行万里路"
+    subheading: "潜犊的Blog"
     banner: "Your image url"
 
 # Banner default settings
