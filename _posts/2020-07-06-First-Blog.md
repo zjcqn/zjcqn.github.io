@@ -1,10 +1,10 @@
 ---
-title: Other | 我的 Bloooooog!
+title: My Bloooooog!
 author: 陈钱牛
 date: 2020-07-06 9:00:00 +0800
-categories: [Others]
+categories: Mics
 layout: post
-tags: [Others]
+tags: Mics Life
 typora-root-url: ..
 ---
 

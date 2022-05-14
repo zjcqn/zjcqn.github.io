@@ -1,9 +1,9 @@
 ---
-title: Paper｜not bugs but features 对抗性样本的成因
+title: 对抗性样本的成因 not Bugs but Features
 author: 陈钱牛
 date: 2020-10-30 15:33:00 +0800
-categories: [Study,adversarial_attack]
-tags: [Paper,adversarial_attack]
+categories: [Research]
+tags: [Paper,Adversarial Attack]
 math: true
 layout: post
 typora-root-url: ..

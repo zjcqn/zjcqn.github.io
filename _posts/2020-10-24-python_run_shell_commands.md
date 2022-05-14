@@ -2,9 +2,10 @@
 title: Python | Python 脚本中运行shell脚本
 author: 陈钱牛
 date: 2020-10-24 19:33:00 +0800
-categories: [Code,Python]
-tags: [Python]
+categories: Implementation
+tags: python
 math: true
+layout: post
 typora-root-url: ..
 ---
 

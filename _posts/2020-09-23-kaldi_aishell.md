@@ -1,11 +1,11 @@
 ---
-title: Kaldi | 说话人识别的实践——Aishell v1
+title: Kaldi实践 Aishell v1
 author: 陈钱牛
 date: 2020-09-23 16:20:00 +0800
 layout: post
-categories: [Study,SRS,Kaldi]
-tags: [Kaldi,SRS]
-typora-root-url: /Users/cqn/MyBlog/zjcqn.github.io
+categories: Implementation
+tags: [Study, ASV, Kaldi]
+typora-root-url: ..
 math: true
 ---
 

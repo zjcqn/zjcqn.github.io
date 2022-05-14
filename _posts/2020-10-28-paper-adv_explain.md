@@ -1,10 +1,11 @@
 ---
-title: Paper | 对抗性样本攻击的成因 EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES
+title: 对抗性样本攻击的成因 EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES
 author: 陈钱牛
 date: 2020-10-28 19:44:00 +0800
-categories: [Study,adversarial_attack]
-tags: [Paper,adversarial_attack]
+categories: [Research]
+tags: [Paper,Adversarial Attack]
 math: true
+layout: post
 typora-root-url: ..
 ---
 
