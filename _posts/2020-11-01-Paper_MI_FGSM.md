@@ -1,5 +1,5 @@
 ---
-title: MI_FGSM和集成攻击方法：黑盒攻击
+title: MI FGSM: 集成模型和黑盒攻击方法
 author: 陈钱牛
 date: 2020-10-30 15:33:00 +0800
 categories: [Research]
