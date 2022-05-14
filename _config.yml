@@ -180,7 +180,7 @@ banner:
 #Excerpt size setting
 excerpt_size: 350
 
-Pagination setting
+# Pagination setting
 paginate: 5
 
 # Disqus comments
