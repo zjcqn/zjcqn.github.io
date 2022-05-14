@@ -60,8 +60,8 @@ yat:
 # If you want more debug log, you can set true
 # debug: false
 
-# If you don't want transparent header, you can set false
-# header_transparent: true
+#If you don't want transparent header, you can set false
+header_transparent: false
 
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
@@ -81,23 +81,23 @@ yat:
 #   - lang: en
 #     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
 #     text: English
-#
+
 #   - lang: fr
 #     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
 #     text: French
-#
+
 #   - lang: zh-CN
 #     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
 #     text: Chinese(Simple)
-#
+
 #   - lang: ja
 #     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
 #     text: Japanese
-#
+
 #   - lang: ko
 #     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
 #     text: Korean
-#
+
 #   - lang: ru
 #     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
 #     text: Russian
@@ -147,12 +147,12 @@ night_mode: "off"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - index.html
+  - archives.html
+  - categories.html
+  - tags.html
+  - about.html
 
 # Page default value
 defaults:
@@ -181,7 +181,7 @@ banner:
 excerpt_size: 350
 
 # Pagination setting
-paginate: 5
+paginate: 8
 
 # Disqus comments
 # disqus:
@@ -199,12 +199,12 @@ paginate: 5
 # See https://utteranc.es/
 # set follow_site_theme true to make utterances' theme follow the site's
 
-# utterances:
-#   repo: "owner/repo"
-#   issue_term: "title"
-#   label: "utterances comment"
-#   theme: "github-light"
-#   follow_site_theme: true
+utterances:
+  repo: "zjcqn/utterances"
+  issue_term: "title"
+  label: "utterances comment"
+  theme: "github-light"
+  follow_site_theme: true
 
 # Build settings
 # highlighter: none
