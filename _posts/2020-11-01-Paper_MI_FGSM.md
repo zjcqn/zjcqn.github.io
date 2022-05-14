@@ -2,8 +2,8 @@
 title: MI_FGSM和集成攻击方法：黑盒攻击
 author: 陈钱牛
 date: 2020-10-30 15:33:00 +0800
-categories: [Study,adversarial_attack]
-tags: [Paper,adversarial_attack]
+categories: [Research]
+tags: [Paper,Adversarial attack]
 layout: post
 math: true
 typora-root-url: ..

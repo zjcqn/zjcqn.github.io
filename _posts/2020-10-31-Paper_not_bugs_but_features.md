@@ -3,7 +3,7 @@ title: 对抗性样本的成因 not Bugs but Features
 author: 陈钱牛
 date: 2020-10-30 15:33:00 +0800
 categories: [Research]
-tags: [Paper,Adversarial Attack]
+tags: [Paper,Adversarial attack]
 math: true
 layout: post
 typora-root-url: ..

@@ -3,7 +3,7 @@ title: AdvPulse
 author: 陈钱牛
 date: 2020-10-10 12:33:00 +0800
 categories: [Research]
-tags: [Paper,Adversarial Attack]
+tags: [Paper,Adversarial attack]
 math: true
 layout: post
 typora-root-url: ..

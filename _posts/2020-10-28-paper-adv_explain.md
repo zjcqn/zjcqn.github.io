@@ -3,7 +3,7 @@ title: 对抗性样本攻击的成因 EXPLAINING AND HARNESSING ADVERSARIAL EXAM
 author: 陈钱牛
 date: 2020-10-28 19:44:00 +0800
 categories: [Research]
-tags: [Paper,Adversarial Attack]
+tags: [Paper,Adversarial attack]
 math: true
 layout: post
 typora-root-url: ..
