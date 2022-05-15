@@ -11,7 +11,7 @@ banner:
   loop: true
   volume: 0.8
   start_at: 8.5
-  image: /assets/images/default/gnu.jpeg
+  image: /assets/images/default/gnu.png
   opacity: 0.618
   background: "#000"
   height: "100vh"
