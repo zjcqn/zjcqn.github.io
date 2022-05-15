@@ -21,13 +21,13 @@ banner:
 ---
 
 
-需要输出
+## 需要输出
 
 - 对应音频的mfcc
 - 从测试集数据集到plda得分的全过程步骤
 - plda score
 
-# 提取MFCC
+## 提取MFCC
 
 ```shell
 cd $mfccdir
@@ -74,7 +74,7 @@ utt2mfcc=get_utt2mfcc(feats_scp_path)
 
 提取train的mfcc耗时很久，资源占用也很多，但是在攻击中并没有用到train的mfcc，使用的是测试集的小量mfcc。
 
-# 提取ivector
+## 提取ivector
 
 同理，获取ivector的方法如下代码块，最终得到一个400维的ivector向量。值得注意的是ivector分为句子级的ivector和说话人级的ivector，这里两个都可以提取，操作上的区别在于.scp文件名称略有区别，在``spk_ivector.scp``中，``.ark``的索引地址使用的是相对路径，所以代码要放在kaldi工程工作路径下运行才行。
 
@@ -91,7 +91,7 @@ utt2ivec=get_utt2ivector(ivector_path)
 print(utt2ivec['BAC009S0764W0149'])
 ```
 
-# 提取PLDA打分
+## 提取PLDA打分
 
 ```shell
 #compute plda score

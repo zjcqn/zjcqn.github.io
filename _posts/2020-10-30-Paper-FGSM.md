@@ -15,11 +15,11 @@ layout: post
 
 ![image-20201030120717026](/assets/images/posts/2020-10-30-Paper_adv_explain/image-20201030120717026.png)
 
-# Abstract
+## Abstract
 
 - We argue instead that the primary cause of neural networks’ vulnerability to ad- versarial perturbation is their linear nature.
 
-# Introduction
+## Introduction
 
 - Szegedy et al. (2014b)[^1]是第一篇正式提出发现对抗性样本攻击的文章
 - In many cases, a wide variety of models with different architectures trained on different subsets of the training data misclassify the same adversarial example. 迁移性
@@ -30,7 +30,7 @@ layout: post
 
 - 这个解释引起了对模型**线性化易训练**和**非线性化防止对抗性攻击**之间的权衡考量
 
-# related work
+## related work
 
 - 主要是Szegedy et al. (2014b)[^1]的工作
   - 提出可靠的对抗性样本生成算法：L-BFGS
@@ -39,7 +39,7 @@ layout: post
   - 对抗性训练可以提高抗性
 - DNN models performing well on test datasets are not learning the true underlying concepts that determine the correct output label. 
 
-# 对抗性样本的线形解释
+## 对抗性样本的线形解释
 
 $$
 \omega^Tx'=\omega^T(x+\eta)=\omega^Tx+\omega^T\eta
@@ -49,7 +49,7 @@ $$
 - 产生$\eta<\epsilon$可能很小，但是经过线形系统$\omega$之后，它的影响将会增大。假设$\omega$是$n$维的向量，但是每一个维度的平均值是$m$，那么在激活函数输入端，$\eta$将会增长到$mn\eta$。由$\eta$引起的激活函数的变化可以跟随$n$呈线性增长。对于高维问题，我们可以对输入进行许多微小的改变，这些变化加起来就是输出的一个大变化。
 - 线性膨胀 accidental steganography
 
-# 非线形模型的线性对抗性扰动
+## 非线形模型的线性对抗性扰动
 
 - LSTM、Relu、maxout网络都是有意设计成以非常线性的方式表现的，因为更容易优化。非线性模型（如sigmoid 网络）为了更容易优化，也将大部分时间花在调整为非饱和、更线性的状态。
 - 提出FGSM算法
@@ -62,12 +62,7 @@ $$
 ![image-20201030130006571](file:///U/assets/images/posts/2020-10-30-Paper_adv_explain/image-20201030130006571.png?lastModify=1604035556)
 
 
-
-
-
-[[]   ]   
-
-# 对抗训练
+## 对抗训练
 
 Szegedy et al. (2014b)[^1]使用对抗性样本和干净样本混合去训练模型来提高其对对抗性样本攻击的抵抗力，这是一种数据增强的方法。作者发现基于FGSM的对抗目标函数训练是一种有效的正则化器
 $$
@@ -75,7 +70,7 @@ J'(\theta,x,y)=\alpha J(\theta,x,y)+(1-\alpha)J(\theta,x+\eta,y)
 $$
 
 
-# 为什么有大量的对抗性样本
+## 为什么有大量的对抗性样本
 
 对抗性样本天生具有迁移性。基于一个模型生成的对抗性样本往往可以使其他相同功能但是实现方式不同的模型发生同样的错误错误（识别结果一样）。非线性解释无法解释这一现象。
 
@@ -87,7 +82,7 @@ $$
 
 
 
-# conclusions
+## conclusions
 
 Here is the list of conclusions from the paper which is a superb summary of the paper:
 

@@ -25,7 +25,7 @@ banner:
 
 subprocess意在替代其他几个老的模块或者函数，比如：``os.system`` ``os.spawn*`` ``os.popen*`` ``popen2.*`` ``commands.*``。subprocess最简单的用法就是调用shell命令了,另外也可以调用程序,并且可以通过stdout,stdin和stderr进行交互。
 
-# API
+## API
 
 ```python
 # subprocess.Popen's api
@@ -46,7 +46,7 @@ subprocess.Popen(
       creationflags=0)
 ```
 
-## 参数
+### 参数
 
 1. ``args``可以是字符串或者序列类型（如：list，元组），用于指定进程的可执行文件及其参数。如果是序列类型，第一个元素通常是可执行文件的路径。我们也可以显式的使用executeable参数来指定可执行文件的路径如`["ls -l"]`，相当于传入cmd。
 2. ``bufsize``：指定缓冲。0 无缓冲,1 行缓冲,其他 缓冲区大小,负值 系统缓冲(全缓冲)
@@ -59,7 +59,7 @@ subprocess.Popen(
     Universal_newlines:不同操作系统下，文本的换行符是不一样的。如：windows下用'/r/n'表示换，而Linux下用'/n'。如果将此参数设置为True，Python统一把这些换行符当作'/n'来处理。startupinfo与createionflags只在windows下用效，它们将被传递给底层的CreateProcess()函数，用于设置子进程的一些属性，如：主窗口的外观，进程的优先级等等。
 9. ``startupinfo``与``createionflags``只在windows下有效**，它们将被传递给底层的CreateProcess()函数，用于设置子进程的一些属性，如：主窗口的外观，进程的优先级等等。
 
-## 方法
+### 方法
 
 1. ``Popen.poll()``：用于检查子进程是否已经结束。设置并返回returncode属性。
 2. ``Popen.wait()``：等待子进程结束。设置并返回returncode属性。
@@ -75,7 +75,7 @@ subprocess.Popen(
 12. `subprocess.call(*popenargs, **kwargs)`：运行命令。该函数将一直等待到子进程运行结束，并返回进程的returncode。文章一开始的例子就演示了call函数。如果子进程不需要进行交互,就可以使用该函数来创建。
 13. `subprocess.check_call(*popenargs, **kwargs)`：与subprocess.call(*popenargs, kwargs)功能一样，只是如果子进程返回的returncode不为0的话，将触发CalledProcessError异常。在异常对象中，包括进程的returncode信息。
 
-# 使用例程
+## 使用例程
 
 ```python
 # 两者的区别是前者无阻塞,会和主程序并行运行,后者必须等待命令执行完毕

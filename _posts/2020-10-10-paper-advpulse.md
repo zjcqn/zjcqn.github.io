@@ -10,9 +10,9 @@ typora-root-url: ..
 ---
 
 AdvPulse is a Subsecond-level Universal, Synchronization-free, and TargetedAdversarial Perturbation.
-# Intruduce
+## Intruduce
 
-## Features
+### Features
 
 相比于传统的对抗性攻击，AdePulse的特点是通用和非同步，可以面向流式输入实时进行攻击。不过文章并没有说实现黑盒攻击，实验中事先判断目标系统的网络结构为X-VECTOR，即MFCC+DNN+PLDA。
 
@@ -22,7 +22,7 @@ AdvPulse is a Subsecond-level Universal, Synchronization-free, and TargetedAdver
 
 ![figure2](/assets/images/posts/2020-10-10-advpulse/image-20201010093002672.png)
 
-## Major Limitations
+### Major Limitations
 
 - Modifying the Entire Audio Input.
 
@@ -30,7 +30,7 @@ AdvPulse is a Subsecond-level Universal, Synchronization-free, and TargetedAdver
 
 - Prior Knowledge on the Audio Input.
 
-## Main Contributions
+### Main Contributions
 
 - The first work to design a universal, synchronization-free and targeted adversarial attack against intelligent audio systems, particularly for streamingspeech attack scenario ([Figure1](#figure1) (b)), using subsecond adversarial perturbations.
 - We utilize the <u>penalty-based universal adversarial perturbation generation algorithm</u> and optimize the adversarial perturbation over the entire time delay distribution, rendering the attack to be robust to **arbitrary** streaming audio with **varying time delay conditions**. 
@@ -39,9 +39,9 @@ AdvPulse is a Subsecond-level Universal, Synchronization-free, and TargetedAdver
 - By incorporating the main sources of distortion occurred during physical playback (i.e., frequency response of speaker and microphone, reflection and reverberation, and ambient noise) into the adversarial perturbation generation process, the effectiveness of adversarial perturbations in physical **over-the-air environments** can be kept.
 - We performed case studies on both speaker recognition and speech command recognition models. Extensive experiments are conducted in both the digital and physical domains, including inside an office, an apartment, and inside-vehicle environments. The results showthat our attack can achieve a high attack success rate in deceiving these models with streaming-speech inputs (e.g., overall 89.2% and 90.3% for speaker recognition and speech command recognition in realistic settings, respectively).
 
-# 短时非同步 subsecond and Synchronization-free
+## 短时非同步 subsecond and Synchronization-free
 
-## 短噪声
+### 短噪声
 
 minimizing the following objective function is the fundamental method to generate a adversarial perdurbation.
 
@@ -65,7 +65,7 @@ ps：我认为这部分的扰动应该是针对于对应段音频产生的，而
 
 ![image-20201010111119040](/assets/images/posts/2020-10-10-advpulse/image-20201010111119040.png)
 
-## 非同步
+### 非同步
 
 使用EOT（Expectation Over Transformation）的方法合成对抗性样本，在生成扰动的过程中加入时间偏移量。与直接求解作用于特定时间戳的对抗性扰动不同，优化一段时间内的损失函数的期望值，使得它加在这段时间内的任何一个地方产生的效果都被优化到。
 
@@ -85,11 +85,11 @@ $$
 
 $n$是音频的总的采样点数，$l$是perturbation的采样点数，$n\gg l$。purturbation $\delta$本身是相当于一个窗口，这个期望的范围就是相当于把窗口从头移动到尾，每一个点都被同等对待（除了首尾），因此这个扰动可以被加到任何地方。
 
-## 小结
+### 小结
 
 Subsecond和 Synchronization-free的目标就实现了，但是目前还是需要针对于一段已知语音进行提前计算对抗性样本，universal的目标还没实现。
 
-# Physically Practical and Universal
+## Physically Practical and Universal
 
 > Our goal is to find a universal subsecond adversarial perturbation $\delta \in [-1,1]^l$  computed from a relatively small set of training data samples to force the model to recognize arbitrary new audio input (e.g., streaming audio input) as the target label with high probability.
 
@@ -113,7 +113,7 @@ $$
 
 ps：这里是每一个$x$迭代一次$z$，如果是所有$x\in D$迭代完更新一次$z$会不会更能代表整体，相当于使用联合概率分布的期望来作为损失函数。
 
-#  Robust Adversarial Perturbation for
+##  Robust Adversarial Perturbation for
 Over-the-air Attack
 
 环境问题是不可避免的，尤其是对轻微到不易被人察觉的扰动而言。文章通过将以下干扰因素纳入对抗性扰动训练过程，增强了对抗干扰的鲁棒性，从而更好地实现物理攻击。文章依次提出了针对性的解决方法。
@@ -128,7 +128,7 @@ Over-the-air Attack
 
 
 
-# Environmental Sound Mimicking
+## Environmental Sound Mimicking
 
 
 

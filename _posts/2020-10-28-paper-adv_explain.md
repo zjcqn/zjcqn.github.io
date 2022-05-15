@@ -11,14 +11,14 @@ typora-root-url: ..
 
 ![image-20201029194457302](/assets/images/posts/2020-10-28-Paper_adv_explain and harnessing/image-20201029194457302.png)
 
-# ABSTRACT
+## ABSTRACT
 
 - Early attempts at explaining this phenomenon focused on nonlinearity and overfitting.
 - We argue instead that the primary cause of neural networks’ vulnerability to adversarial
 	perturbation is their linear nature.
 - harnessing method：Using this approach to provide examples for adversarial training
 
-# Introduction
+## Introduction
 
 - Szegedy et al. (2014b)[^1] find adversarial examples. **This suggests that adversarial examples expose fundamental blind spots in our training algorithms.**speculative explanations have suggested it is due to **extreme nonlinearity** of deep neural networks, perhaps combined with **insufficient model averaging** and **insufficient regularization** of the purely supervised learning problem.
 - show evidence to argue the explanation
@@ -26,7 +26,7 @@ typora-root-url: ..
 - raise a method to provide an additional regularization: **adversarial training**
 - 作者认为非线性才是对抗性样本攻击的成因
 
-# related work
+## related work
 
 - Those most relevant to Szegedy et al. (2014b)[^1]  include:
 
@@ -38,7 +38,7 @@ typora-root-url: ..
 
 - These results suggest that classifiers based on modern machine learning techniques, even those that obtain excellent performance on the test set, are not learning the true **underlying concepts that determine the correct output label**. Instead, these algorithms have built a Potemkin village (骗人的村庄，形式主义) that **works well on naturally occuring data**, but is exposed as a fake when one visits points in space that do not have high probability in the data distribution.
 
-# The Linear Explanation Of Adversarial Examples
+## The Linear Explanation Of Adversarial Examples
 
 
 $$
