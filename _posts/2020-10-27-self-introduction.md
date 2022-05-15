@@ -7,6 +7,18 @@ tags: [Mics]
 math: true
 layout: post
 typora-root-url: ..
+banner:
+  video:
+  loop: true
+  volume: 0.8
+  start_at: 8.5
+  image: https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 > 随着科学技术的迅猛发展，人们参与生产生活的各种工具变得越来越先进。然而，从安全的角度来讲，技术越高级越复杂，就会存在越多的安全漏洞。万物互联，可能也意味着每一个不起眼的设备的不起眼的细节背后都存在可以被黑客利用的漏洞。攻击面大了，信息安全工作任重道远。

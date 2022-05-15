@@ -7,6 +7,18 @@ tags: python
 math: true
 layout: post
 typora-root-url: ..
+banner:
+  video:
+  loop: true
+  volume: 0.8
+  start_at: 8.5
+  image: https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 > 这篇文章主要介绍了Python的subprocess模块总结,本文详细讲解了subprocess模块参数及Popen方法,然后给出了多个使用实例,需要的朋友可以参考下

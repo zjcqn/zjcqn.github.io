@@ -1,10 +1,23 @@
 ---
-title: My Bloooooog!
-author: 陈钱牛
-date: 2020-07-06 9:00:00 +0800
-categories: Mics
 layout: post
-tags: Mics Life
+title: My Bloooooog!
+subtitle: A memorial
+author: 陈钱牛
+categories: Mics
+banner:
+  video:
+  loop: true
+  volume: 0.8
+  start_at: 8.5
+  image: https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
+tags: jekyll theme yat
+sidebar: []
 typora-root-url: ..
 ---
 
