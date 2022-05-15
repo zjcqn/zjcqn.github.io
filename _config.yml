@@ -61,7 +61,7 @@ yat:
 # debug: false
 
 #If you don't want transparent header, you can set false
-header_transparent: false
+# header_transparent: true
 
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
@@ -70,7 +70,7 @@ header_transparent: false
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: false
+sitemap: true
 
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
@@ -108,7 +108,7 @@ header_transparent: false
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-theme_color: snowwhite
+# theme_color: snowwhite
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -119,7 +119,7 @@ theme_color: snowwhite
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-brand_color: orangered
+# brand_color: orangered
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -164,24 +164,24 @@ defaults:
 # Banner default settings
 # These banner settings are for global banner default, but you can also
 # config it by the front matter for one specific post
-banner:
-  video: null             # Video banner source
-  loop: true              # Video loop
-  volume: 0               # Video volume (100% is 1.0)
-  start_at: 0             # Video start time
-  image: null             # Image banner source
-  opacity: 1.0            # Banner opacity (100% is 1.0)
-  background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
-  height: "640px"         # Banner default height
-  min_height: null        # Banner minimum height
-  heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
-  subheading_style: null  # Custom subheading style (e.g. color: gold)
+# banner:
+#   video: null             # Video banner source
+#   loop: true              # Video loop
+#   volume: 0               # Video volume (100% is 1.0)
+#   start_at: 0             # Video start time
+#   image: null             # Image banner source
+#   opacity: 1.0            # Banner opacity (100% is 1.0)
+#   background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
+#   height: "640px"         # Banner default height
+#   min_height: null        # Banner minimum height
+#   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
+#   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
 #Excerpt size setting
-excerpt_size: 350
+excerpt_size: 200
 
 # Pagination setting
-paginate: 8
+paginate: 10
 
 # Disqus comments
 # disqus:
