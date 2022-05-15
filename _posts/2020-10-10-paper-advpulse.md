@@ -28,11 +28,11 @@ AdvPulse is a Subsecond-level Universal, Synchronization-free, and TargetedAdver
 
 相比于传统的对抗性攻击，AdePulse的特点是通用和非同步，可以面向流式输入实时进行攻击。不过文章并没有说实现黑盒攻击，实验中事先判断目标系统的网络结构为X-VECTOR，即MFCC+DNN+PLDA。
 
-<a name="figure1">![figure1](/assets/img/posts/2020-10-10-advpulse/image-20201010092743973.png)</a>
+<a name="figure1">![figure1](/assets/images/posts/2020-10-10-advpulse/image-20201010092743973.png)</a>
 
 
 
-![figure2](/assets/img/posts/2020-10-10-advpulse/image-20201010093002672.png)
+![figure2](/assets/images/posts/2020-10-10-advpulse/image-20201010093002672.png)
 
 ## Major Limitations
 
@@ -75,7 +75,7 @@ $$
 
 ps：我认为这部分的扰动应该是针对于对应段音频产生的，而不是通用的，原文里说的有些模糊。
 
-![image-20201010111119040](/assets/img/posts/2020-10-10-advpulse/image-20201010111119040.png)
+![image-20201010111119040](/assets/images/posts/2020-10-10-advpulse/image-20201010111119040.png)
 
 ## 非同步
 
@@ -121,7 +121,7 @@ $$
 
 简而言之，进一步把$x$也纳入优化考量。选择具有代表性的训练样本D训练扰动$\delta$，最后将训练好的应用到D之外的样本中去，实现通用性。以下是训练的算法。
 
-![image-20201010143548711](/assets/img/posts/2020-10-10-advpulse/image-20201010143548711.png)
+![image-20201010143548711](/assets/images/posts/2020-10-10-advpulse/image-20201010143548711.png)
 
 ps：这里是每一个$x$迭代一次$z$，如果是所有$x\in D$迭代完更新一次$z$会不会更能代表整体，相当于使用联合概率分布的期望来作为损失函数。
 

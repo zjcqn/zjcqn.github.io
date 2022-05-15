@@ -23,7 +23,7 @@ banner:
 
 本文是**NIPS 2017** Adversarial Attacks and Defenses Competition中non-targeted attack和targeted attack赛道的**第一名**，投稿至**CVPR 2018**
 
-![image-20201101111040222](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101111040222.png)
+![image-20201101111040222](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101111040222.png)
 
 文章中提到L-BFGS、FGSM、I-FGSM 、自适应查询等。自适应查询算法虽然不用获得损失函数，但是需要大量查询，不实际。经典算法（FGSM、I-FGSM）具有局限性。简单来说就是，FGSM具有弱白盒强黑盒，I-FGSM强白盒弱黑盒。
 
@@ -67,7 +67,7 @@ $$
 
 以下是MI-FGSM的算法，在（6）式中使用衰减因子$\mu$收集前t次迭代的梯度，可以保留梯度的大致方向，防止陷入不好的局部最优值。每次迭代中使用$L_1$距离（任何距离都是可行的）做归一化。
 
-![algorithm of MI-FGSM](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101125916799.png)
+![algorithm of MI-FGSM](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101125916799.png)
 
 ​            
 
@@ -91,25 +91,25 @@ $$
 >
 > $label_y$：y的one-hot编码
 
-![image-20201101131357392](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101131357392.png)
+![image-20201101131357392](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101131357392.png)
 
 # 结果
 
 ## 单一模型生成的对抗性样本
 
-![image-20201101131417240](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101131417240.png)
+![image-20201101131417240](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101131417240.png)
 
 
 
-![image-20201101132056893](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101132056893.png)
+![image-20201101132056893](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101132056893.png)
 
 
 
-![image-20201101132109572](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101132109572.png)
+![image-20201101132109572](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101132109572.png)
 
 
 
-![image-20201101132121832](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101132121832.png)
+![image-20201101132121832](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101132121832.png)
 
 
 
@@ -117,14 +117,14 @@ $$
 
 集成的实验，一般是三个做集成，留出一个当黑盒，就是hold-out，加-的就是留出的那个model。
 
-![image-20201101131433715](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101131433715.png)
+![image-20201101131433715](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101131433715.png)
 
 
 
-![image-20201101132137766](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101132137766.png)
+![image-20201101132137766](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101132137766.png)
 
 ## 攻击经过对抗训练的模型：
 
-![image-20201101131657685](/assets/img/posts/2020-11-01-Paper_MI_FGSM/image-20201101131657685.png)
+![image-20201101131657685](/assets/images/posts/2020-11-01-Paper_MI_FGSM/image-20201101131657685.png)
 
 [^source code]: :https://github.com/dongyp13/

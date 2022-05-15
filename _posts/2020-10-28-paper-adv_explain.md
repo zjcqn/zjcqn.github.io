@@ -21,7 +21,7 @@ banner:
   subheading_style: "color: gold"
 ---
 
-![image-20201029194457302](/assets/img/posts/2020-10-28-Paper_adv_explain and harnessing/image-20201029194457302.png)
+![image-20201029194457302](/assets/images/posts/2020-10-28-Paper_adv_explain and harnessing/image-20201029194457302.png)
 
 # ABSTRACT
 

@@ -25,7 +25,7 @@ banner:
 
 过去认为对抗性样本攻击是由于模型过于非线性化导致的。文章提出的成因恰好相反，认为对抗性样本攻击是由于机器学习模型过于线性化导致的。在文章中阐述了原因，并提出了使用对抗性学习去防御对抗性样本攻击的方法。
 
-![image-20201030120717026](/assets/img/posts/2020-10-30-Paper_adv_explain/image-20201030120717026.png)
+![image-20201030120717026](/assets/images/posts/2020-10-30-Paper_adv_explain/image-20201030120717026.png)
 
 # Abstract
 
@@ -71,7 +71,7 @@ $$
 $$
 
 
-![image-20201030130006571](file:///U/assets/img/posts/2020-10-30-Paper_adv_explain/image-20201030130006571.png?lastModify=1604035556)
+![image-20201030130006571](file:///U/assets/images/posts/2020-10-30-Paper_adv_explain/image-20201030130006571.png?lastModify=1604035556)
 
 
 
@@ -95,7 +95,7 @@ $$
 
 下左图，纵轴是没有经过softmax的概率值，可以见到在同一个方向上，随着$\epsilon$变化，不同类别结果的变化情况。只有在很小的一段里能被识别正确，只要方向正确，步长够大，对抗性样本攻击就会攻击成功。实验证明，以$\epsilon$ 为自变量，对抗样本呈抱团出现。
 
-![image-20201030144152704](/assets/img/posts/2020-10-30-Paper_adv_explain/image-20201030144152704.png)
+![image-20201030144152704](/assets/images/posts/2020-10-30-Paper_adv_explain/image-20201030144152704.png)
 
 
 

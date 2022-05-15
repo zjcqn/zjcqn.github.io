@@ -1,10 +1,22 @@
 ---
 layout: post
-title: London Life
+title: 伦敦生活，教父发言
 subtitle: London Life
 author: Channing
 categories: [Video notes]
 tags: [Life,Love]
+banner:
+  video:
+  loop: true
+  volume: 0.8
+  start_at: 8.5
+  image: https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 **Love is awful.**

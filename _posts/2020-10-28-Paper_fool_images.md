@@ -33,7 +33,7 @@ banner:
 - we use **evolutionary algorithms** or **gradient ascent** to generate images that are given high prediction scores by CNNs.
 - We also find that, for MNIST DNNs, it is not easy to prevent the DNNs from being fooled by retraining them with fooling images labeled as such.
 
-![image-20201029143930269](/assets/img/posts/2020-10-28-Paper_fool_images/image-20201029143930269.png)
+![image-20201029143930269](/assets/images/posts/2020-10-28-Paper_fool_images/image-20201029143930269.png)
 
 ## Method 
 

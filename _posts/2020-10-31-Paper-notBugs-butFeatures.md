@@ -24,7 +24,7 @@ banner:
 Title: Title：Adversarial Examples are not Bugs, they are Features（2019）
 
 
-![image-20201030233200893](/assets/img/posts/2020-10-31-Paper_not_bugs_but_features/image-20201030233200893.png)
+![image-20201030233200893](/assets/images/posts/2020-10-31-Paper_not_bugs_but_features/image-20201030233200893.png)
 
 很难解释神经网络是根据什么做预测的，所以更难得知对抗性样本是如何骗过神经网络的。这篇文章将给出了一种对对抗性样本攻击成因的全新的解释。
 
