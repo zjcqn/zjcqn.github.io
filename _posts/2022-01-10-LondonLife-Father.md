@@ -19,7 +19,7 @@ banner:
   subheading_style: "color: gold"
 ---
 
-# London Life
+## London Life
 
 **Love is awful.**
 
