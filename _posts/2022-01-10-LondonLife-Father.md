@@ -10,7 +10,7 @@ banner:
   loop: true
   volume: 0.8
   start_at: 8.5
-  image: https://bit.ly/3xTmdUP
+  image: /assets/images/posts/2022-01-10-LondonLife-Father/father.jpg
   opacity: 0.618
   background: "#000"
   height: "100vh"
@@ -18,6 +18,8 @@ banner:
   heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
   subheading_style: "color: gold"
 ---
+
+# London Life
 
 **Love is awful.**
 
@@ -72,3 +74,7 @@ banner:
 **When you find somebody that you love...**
 
 **It feels like hope.**
+
+---
+
+![londonlife](/assets/images/posts/2022-01-10-LondonLife-Father/londonlife.webp)

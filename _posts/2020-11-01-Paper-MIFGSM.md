@@ -7,18 +7,6 @@ tags: [Paper,Adversarial attack]
 layout: post
 math: true
 typora-root-url: ..
-banner:
-  video:
-  loop: true
-  volume: 0.8
-  start_at: 8.5
-  image: https://bit.ly/3xTmdUP
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
 ---
 
 本文是**NIPS 2017** Adversarial Attacks and Defenses Competition中non-targeted attack和targeted attack赛道的**第一名**，投稿至**CVPR 2018**

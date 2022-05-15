@@ -7,7 +7,17 @@ layout: post
 tags: Life
 typora-root-url: ..
 banner:
-  image: https://bit.ly/3xTmdUP
+  video:
+  loop: true
+  volume: 0.8
+  start_at: 8.5
+  image: /assets/images/default/dophin.jpeg
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 

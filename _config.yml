@@ -152,7 +152,7 @@ header_pages:
   - archives.html
   - categories.html
   - tags.html
-  - about.html
+  - about.md
 
 # Page default value
 defaults:
@@ -210,6 +210,19 @@ paginate: 10
 
 # Build settings
 # highlighter: none
+
+comments:
+  provider: valine # false (default), "disqus", "gitalk", "valine", "custom"
+
+
+
+  ## Valine
+  # please refer to https://valine.js.org/en/ for more info.
+valine:
+  app_id      : LIMC97G54TXCDJkWDAGikdRK-MdYXbMMI # LeanCloud App id
+  app_key     : VplJB5uVdF8FuI1T6UaQh28L # LeanCloud App key
+  placeholder : 欢迎留下你的想法 # Prompt information
+  visitor     : false
 
 markdown: kramdown
 mathjax: true
