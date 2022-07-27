@@ -5,6 +5,7 @@ author: 陈钱牛
 categories: [Research]
 tags: [GAN]
 math: true
+comment: true
 typora-root-url: ..
 ---
 

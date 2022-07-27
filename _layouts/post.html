@@ -27,6 +27,8 @@ sidebar:
 
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
+    <div id="disqus_thread"></div>
+
     <div class="post-nav">
       {%- if page.previous -%}
         <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
@@ -73,10 +75,13 @@ sidebar:
       {%- include extensions/comments/utterances.html -%}
       {%- endif -%}
 
-      {%- include extensions/comments/valine.html -%}
+      <!-- {%- include extensions/comments/valine.html -%} -->
       {%- endif -%}
     </div>
     {%- endif -%}
 
   </section>
 </div>
+
+
+
