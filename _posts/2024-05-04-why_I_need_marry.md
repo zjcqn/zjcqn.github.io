@@ -2,8 +2,8 @@
 layout: post
 title: 我为什么需要（不需要）结婚
 author: 陈钱牛
-categories: [Research]
-tags: [GAN]
+categories: [Mics]
+tags: [Life,哲学]
 comment: true
 typora-root-url: ..
 ---
