@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My awsome title
+title: Channing Chen's Blog
 email: zjcqn163@163.com
 author: Channing Chen
 
@@ -186,8 +186,8 @@ excerpt_size: 200
 paginate: 10
 
 # Disqus comments
-disqus:
-  shortname: "zjcqn-top"
+# disqus:
+#   shortname: "zjcqn-top"
 
 # Gitment comments
 # gitment:
