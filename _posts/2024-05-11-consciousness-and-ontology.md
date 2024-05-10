@@ -6,19 +6,6 @@ categories: [Mics]
 tags: [Life,哲学]
 comment: true
 typora-root-url: ..
-banner:
-  video:
-  loop: true
-  volume: 0.8
-  start_at: 8.5
-  image: /assets/images/posts/2024-05-11-consciousness-and-ontology.md/pic.jpg
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
----
 
 在现实困境中，对自我认知进行对齐，实现自我和解，是每个人都可能面临的挑战。
 
